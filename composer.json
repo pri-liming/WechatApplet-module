@@ -8,7 +8,7 @@
         }
     ],
     "extra": {
-        "module-dir": "Modules",
+        "module-dir": "Custom",
         "laravel": {
             "providers": [],
             "aliases": {

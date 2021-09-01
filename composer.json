@@ -1,0 +1,23 @@
+{
+    "name": "liming/wechatapplet",
+    "description": "Laravel8.0 WeChat applet management package",
+    "authors": [
+        {
+            "name": "liming",
+            "email": "1154263375@qq.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\WechatApplet\\": ""
+        }
+    }
+}

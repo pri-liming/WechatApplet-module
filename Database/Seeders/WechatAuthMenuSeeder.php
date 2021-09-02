@@ -47,7 +47,7 @@ class WechatAuthMenuSeeder extends Seeder
                 'target' => $item['target'],
                 'createtime' => $item['createtime'],
                 'module' => $item["module"],
-                'menu' => $item["menu"],
+                'menus' => $item["menus"],
             ]);
             if($newPid <= 0) break;
             if(isset($item["contents"]) && is_array($item["contents"]) && !empty($item["contents"])) $this->addInfo($item["contents"], $newPid);
@@ -83,7 +83,7 @@ class WechatAuthMenuSeeder extends Seeder
                 "target" => "_self",
                 "createtime" => $time,
                 'module' => $module,
-                "menu" => $module == "" ? $module : $module . "-1",
+                "menus" => $module == "" ? $module : $module . "-1",
                 "contents" => [
                     [   //  订阅消息设置
                         "href" => "/admin/wechat_applet/template",
@@ -95,7 +95,7 @@ class WechatAuthMenuSeeder extends Seeder
                         "target" => "_self",
                         "createtime" => $time,
                         'module' => $module,
-                        "menu" => $module == "" ? $module : $module . "-2",
+                        "menus" => $module == "" ? $module : $module . "-2",
                         "contents" => [
                             [
                                 "href" => "/admin/wechat_applet/template",
@@ -107,7 +107,7 @@ class WechatAuthMenuSeeder extends Seeder
                                 "target" => "_self",
                                 "createtime" => $time,
                                 'module' => $module,
-                                "menu" => $module == "" ? $module : $module . "-3",
+                                "menus" => $module == "" ? $module : $module . "-3",
                             ]
                         ],
                     ],
@@ -121,7 +121,7 @@ class WechatAuthMenuSeeder extends Seeder
                         "target" => "_self",
                         "createtime" => $time,
                         'module' => $module,
-                        "menu" => $module == "" ? $module : $module . "-4",
+                        "menus" => $module == "" ? $module : $module . "-4",
                         "contents" => [
                             [
                                 "href" => "/admin/wechat_applet/setting",
@@ -133,7 +133,7 @@ class WechatAuthMenuSeeder extends Seeder
                                 "target" => "_self",
                                 "createtime" => $time,
                                 'module' => $module,
-                                "menu" => $module == "" ? $module : $module . "-5",
+                                "menus" => $module == "" ? $module : $module . "-5",
                             ]
                         ],
                     ],

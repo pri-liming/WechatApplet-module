@@ -1,6 +1,7 @@
 {
-    "name": "pri-liming/wechatapplet",
+    "name": "pri-liming/wechatapplet-module",
     "description": "Laravel8.0 WeChat applet management package",
+    "type": "laravel-module",
     "authors": [
         {
             "name": "liming",
